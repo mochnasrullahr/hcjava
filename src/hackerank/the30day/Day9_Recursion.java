@@ -1,0 +1,17 @@
+package hackerank.the30day;
+
+import java.util.Scanner;
+
+public class Day9_Recursion {
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int n = in.nextInt();
+		int result = factorial(n);
+		System.out.println(result);
+	}
+
+	private static int factorial(int n) {
+		if (n<=1) return 1;
+		return n * factorial(n-1);
+	}
+}
