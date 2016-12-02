@@ -8,7 +8,7 @@ public class Day4 {
 		int T = sc.nextInt();
 		for (int i = 0; i < T; i++) {
 			int age = sc.nextInt();
-			Person p = new Person(age);
+			PersonD4 p = new PersonD4(age);
 			p.amIOld();
 			for (int j = 0; j < 3; j++) {
 				p.yearPasses();
@@ -20,10 +20,10 @@ public class Day4 {
     }
 }
 
-class Person {
+class PersonD4 {
     private int age;	
   
-	public Person(int initialAge) {
+	public PersonD4(int initialAge) {
   		// Add some more code to run some checks on initialAge
         if (initialAge<0) {
             age = 0;
